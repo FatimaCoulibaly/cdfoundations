@@ -1,72 +1,80 @@
 ECHO is on.
 
-html, body {
-	margin: 50px;
-	margin-left: 100px;
-	margin-right:100px;
-	font-size: 150%;
+<!DOCTYPE html>
+<html>
+<html id = "grad">
+<head>
+<title>Expressive Text</title>
 
-}
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-
-h1 {
-	font-family: 'Josefin Sans', sans-serif;
-	text-decoration: underline;
-	font-weight: 200;
-	text-transform:uppercase;
-	font-size: 1em;
-	width: 100%;
-	border-radius: 0.5em;
-	cursor: auto;
-	transition: 0.5s all ease-in-out;
-	letter-spacing: 20px;
-	text-align: left;
+</head>
 
 
-}
+<body>
+
+<h1>The Road Not Taken - Robert Frost</h1>	
+
+<section>
+<p id= "one">
+
+<marquee behavior="scroll" direction="down" scrollamount="10">
+
+<br>Two roads diverged in a yellow wood,<br>
+<br>And sorry I could not travel both<br>
+<br>And be one traveler, long I stood<br>
+<br>And looked down one as far as I could<br>
+<br>To where it bent in the undergrowth;<br>
+</marquee>
+
+</p>
+</section>
+
+<section>
+<p id="two">
+
+<marquee behavior="scroll" direction="down">
+<br>Then took the other, as just as fair,<br>
+<br>And having perhaps the better claim,<br>
+<br>Because it was grassy and wanted wear;<br>
+<br>Though as for that the passing there<br>
+<br>Had worn them really about the same,<br>
+</marquee>
+</p>
+</section>
+
+<section>
+<p id="three">
+
+<marquee behavior="scroll" direction="right">
+<br>And both that morning equally lay<br>
+<br>In leaves no step had trodden black.<br>
+<br>Oh, I kept the first for another day!<br>
+<br>Yet knowing how way leads on to way,<br>
+<br>I doubted if I should ever come back.<br>
+</marquee>
+</p>
+</section>
+
+<section>
+<p id="four">
 
 
- p {
- 	text-align: right;
- }
+<marquee behavior="scroll" direction="left">
+<b>
+<br>I shall be telling this with a sigh<br>
+<br>Somewhere ages and ages hence:<br>
+<br>Two roads diverged in a wood, and I—<br>
+<br>I took the one less traveled by,<br>
+<br>And that has made all the difference.<br>
+</b>
+</marquee>
+</p>
+</section>
 
-
-#one {
-	border: 5px solid orange;
- 	padding: 30px;
- 	font-family: 'Raleway', sans-serif;
-
-}
- #two {
- 	border: 5px solid purple;
- 	padding: 30px;
-  	writing-mode: vertical-rl;
-  	word-wrap: break-word;
-  	font-family: 'Peddana', serif;
-
-}
-
-#three {
-	border: 5px solid blue;
- 	padding: 30px;
-	text-align: left;
-	writing-mode: horizontal-tb; 
-	font-family: 'Dancing Script', cursive;
-
-}
-
-#four {
-	border: 5px solid red;
- 	padding: 30px;
-  writing-mode: vertical-rl;
-}
-
-
-#grad {
-  background-image: linear-gradient(purple, orange);
-}
-
-
-.aligner{
-	width:80%;
-}
+</body>
+</html>
