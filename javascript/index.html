@@ -1,1 +1,129 @@
-ECHO is on.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Different Seasons</title>
+</head>
+
+<h1>Which Season Is Your Favorite?</h1>
+
+
+
+
+<style type="text/css">
+
+	h1 {
+		text-align: center;
+		font-family: Space Grotesk;
+		color: #1A090D;
+		margin:50px
+
+		} 
+
+	html, body {
+		text-align:middle;
+		font-family:Arial, sans-serif;
+		
+		background-color: #C5C6D3;
+		position: center;
+	}
+	input, div{
+		margin:2%;
+		position: center;
+		
+	}
+
+#shapeshifter {
+width:12em;
+height:4em;
+background-color:#F29469;
+text-align: center;
+margin: 5%;
+}
+
+#shapeshifter2 {
+	margin: 2%
+}
+
+</style>
+
+<body>
+
+	<div id='shapeshifter2'>
+	<img src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/fbdms-388149-Full-Image_GalleryBackground-en-US-1479417640489._RI_.jpg" style="width:405px;height:252px;">
+	</div>
+
+	<p>
+
+	<input placeholder='My Favorite Season is...' type="text" name="name">
+	<div id='welcome'>Your answer</div>
+	</p>
+
+	<b>
+	<p>Click on the box below to see the colors change!</p>
+	</b>
+
+	<div id='shapeshifter'>I love to see the seasons change!</div>
+
+	<h1>Which Season Are We Currently In? </h1>
+	<input placeholder='This Season Is...' type="text" name="guess">
+	<div id='result'>Check your calendar if you need to. <b> Note: Capitalize the first letter in your response</b></div>
+
+</body>
+
+<script>
+let name = document.querySelector('input[name="name"]')
+let welcome =document.querySelector('#welcome')
+let shapeshifter = document.querySelector('#shapeshifter')
+let shapeshifter2= document.querySelector('#shapeshifter2')
+let guess = document.querySelector('input[name="guess"]')
+let result = document.querySelector('#result')
+
+console.log(name)
+console.log(welcome)
+console.log(shapeshifter)
+console.log(shapeshifter2)
+console.log(guess)
+console.log(result)
+	
+	name.onchange=function(){
+	welcome.innerHTML= name.value + ' is a lovely season.'
+}
+
+shapeshifter.onmouseover=function(){
+	shapeshifter.innerHTML='My favorite is Spring!'
+	shapeshifter.style.width='8em'
+}
+
+shapeshifter.onmouseout=function(){
+	shapeshifter.innerHTML='I love to see the seasons change!'
+	shapeshifter.style.width='8em'
+}
+
+
+shapeshifter.onclick=function(){
+	if(shapeshifter.style.backgroundColor==''){
+		shapeshifter.style.backgroundColor='#F5F9E9'
+	} else {
+		shapeshifter.style.backgroundColor='#CC94DC'
+	}
+
+}
+
+shapeshifter2.onclick=function(){
+	if(shapeshifter2.style.align=='left'){
+		shapeshifter2.style.align= 'center'
+	} else {
+		shapeshifter2.style.align= 'right'
+	}
+}
+
+guess.onchange=function() {
+	if((guess.value=='Fall') || guess.value=='Autumn'){
+		result.innerHTML="Yes, you got it right!"
+	} else {
+		result.innerHTML='Sorry. Please try again!'
+	}
+}
+
+</script>
+</html>
