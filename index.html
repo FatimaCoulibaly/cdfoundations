@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body, html {
+		font-family: Helevetica Neue, sans-serif;
+	}
+	.option {
+		display:inline-block;
+		margin: 2%;
+		padding:1% 2%;
+		border: 0.05em solid black;
+	}
+</style>
+<body>
+
+<div class='option' id='happy'>Happy</div>
+<div class='option' id='neutral'>Neutral</div>
+<div class='option' id='sad'>Sad</div>
+	
+
+<p id="demo"></p>
+
+<script>
+var emotionName = "Happy";
+document.getElementById("demo").innerHTML = emotionName;
+</script>
+
+
+<p id="demo" onclick="myFunction()">Click on me to see the words change.</p>
+
+<script>
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Happy, Neutral, and Sad!";
+}
+</script>
+
+
+</body>
+<script type="text/javascript" src='main.js'></script>
+</html>
