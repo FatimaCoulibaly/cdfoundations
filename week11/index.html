@@ -1,1 +1,155 @@
-ECHO is on.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fun Fact</title>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
+</head>
+<style type="text/css">
+	html, body{
+		background-color:#04268C;
+		top:0;
+		left:0;
+		margin:0;
+		height:100%;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		font-family: 'Baloo Bhaina 2', cursive;
+	}
+	#alert {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100vh;
+		bottom:-100vh;
+		transition:2s cubic-bezier(1,.1,.17,.99);
+		cursor:pointer;
+	}
+	#alert h2 {
+		margin-top:10%;
+	}
+	.aligner {
+		width:30%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		background-color:#04268C;
+		border:0.2em solid #BF265E;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+	.aligner:hover {
+		border:0.2em solid white;
+	}
+	em {
+		display:block;
+		font-size:2em;
+		line-height:0.5em;
+		animation: 2s slidein linear infinite;
+	}
+	.main {
+		width:100%;
+	}
+	.button {
+		width:8em;
+		height:8em;
+		font-size:2em;
+		border-radius:50%;
+		background-color:#BF265E;
+		box-shadow: 0.1em 0.1em 4em #F2357B;
+		color:white;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		border:0.05em solid #BF265E;
+		transition:0.25s ease-in-out;
+		animation:5s pulse ease infinite alternate,
+		nudge 5s linear infinite alternate;
+		border-radius: 100%;
+		cursor:pointer;
+	}
+	.button:hover {
+		border:0.05em solid white;
+
+	}
+	@keyframes pulse {
+		0% {
+			transform:scale(1);
+		}
+		50%{
+			transform:scale(1.2);
+		}
+		100%{
+			transform:scale(1);
+		}
+		0%, 100% {
+    	background-color: pink;
+ 		}
+  		50% {
+    	background-color: purple;
+  		}
+	}
+
+
+	@keyframes slidein {
+		15% {
+			color: #1FFF96;
+		}
+		40% {
+			color:#3640FC;
+		}
+		60% {
+			color: #FF47B3;
+		}
+		100% {
+			color: #1FFF96;
+		}
+
+	}
+	@media screen and (max-width:767px){
+		.aligner {
+			width:80%;
+			height:80vh;
+		}
+	}
+</style>
+<body>
+
+<div class='main'>
+	<div class='button'>I Love Flowers</div>
+</div>
+
+
+<div id="alert">
+	<div class='aligner'>
+		<h2>Plants brighten up <em>my day!<em></h2>
+		<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_fwevrugd.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+button = document.querySelector('.button')
+alert = document.querySelector('#alert')
+
+button.onclick=function() {
+	alert.style.opacity='1'
+	alert.style.bottom='0'
+}
+
+alert.onclick=function() {
+	alert.style.opacity='0'
+	alert.style.bottom='-100vh'
+}
+
+	
+
+</script>
+</html>
