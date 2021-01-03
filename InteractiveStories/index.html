@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parable of the Palace</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Redressed&family=Rouge+Script&display=swap" rel="stylesheet">
+	<script src="main.js"></script> 
+</head>
+
+<style type="text/css">
+
+html, body {
+	background-color: #6F1D1B;
+}
+
+
+
+.heading {
+	font-family: Redressed, cursive;
+	color: #FFBA0A;
+	-webkit-transition: color 2s;
+	transition: color 2s;
+	font-size: 60px;
+	text-align: center;
+
+	background-color: transparent;
+	border: 5px solid #FAC84D;
+	padding: 40px 10px;
+	margin: 100px;
+	margin-top: 100px;
+}
+
+.heading: hover {
+	color: #310D0C;
+	cursor: pointer;
+
+}
+
+
+.underline {
+	border-bottom: 2px solid currentColor;
+	display: inline-block;
+  	line-height: 1;
+
+}
+
+
+.subtext {
+	font-family: Rouge Script, cursive;
+	color: #FFE6A7;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+.text1 {
+	font-family: Rouge Script, cursive;
+	color: #FAC84D;
+	font-size: 60px;
+	text-align: center;
+	padding: 50px;
+	border: 6px solid #FFE099;
+	margin: 180px;
+}
+
+
+.capitalize {
+  color: #FFBF1F;
+  font-size: 60px;
+  font-family: Rouge Script, cursive;
+
+
+}
+
+.capitalize:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.hexagon {
+  position: relative;
+  top: 300px;
+  right: 20px;
+ bottom: 300px;
+ 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+ 
+  animation:5s pulse ease-in-out infinite;
+  cursor:pointer;
+}
+
+
+.hexagon svg: hover {
+	color: #FAC84D;
+  
+}
+
+ @keyframes pulse {
+		0% {
+			transform:scale(1);
+		}
+		50%{
+			transform:scale(2.2);
+		}
+		100%{
+			transform:scale(2);
+		}
+	}
+	
+.start {
+	position: relative;
+	text-align: center;
+	top: 500px;
+}
+
+</style>
+
+
+<body>
+
+<div class="heading">
+<div class="underline">
+<h1> Parable of the Palace </h1>
+</div>
+<div class="subtext">
+<p>Jorge Luis Borges</p>
+<p>1956</p>
+</div>
+</div>
+
+
+<div class="text1">
+<div>
+	<span class="capitalize"><span style='font-size:2.0em;'>T</span></span>hat day, the Yellow Emperor showed the poet his palace.
+</div>
+
+<a href="page1.html">
+<div class="hexagon">
+<svg width="1400" height="100" viewBox="0 0 465 413" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M458.841 210.21L347.606 404.723C346.535 406.597 344.538 407.751 342.379 407.743L121.406 407.014C119.247 407.007 117.258 405.84 116.197 403.959L6.14143 208.715C5.1039 206.875 5.11071 204.624 6.15935 202.79L117.394 8.2768C118.465 6.40278 120.462 5.24933 122.621 5.25646L343.594 5.98588C345.753 5.99301 347.742 7.1596 348.803 9.04068L458.859 204.285C459.896 206.125 459.889 208.376 458.841 210.21Z" fill="#FFBF1F" stroke="#FFE099" stroke-width="25"/>
+</svg>
+</div>
+</a>
+
+
+
+</body>
+</html>
