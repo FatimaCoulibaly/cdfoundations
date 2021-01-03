@@ -1,0 +1,85 @@
+html, body{
+		background-color:#EDBFC6;
+		top:0;
+		left:0;
+		margin:0;
+		width: 100%;
+		display:flex;
+		text-align:center;
+		font-family: 'Secular One', sans-serif;
+	}
+
+
+.svgtype {
+	color: #260C1A;
+	position: fixed;
+	width: 550px;
+	height: 124px;
+	left: 400px;
+	top: -35px;
+	font-family: 'Secular One', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+}
+
+h1 {
+	color: #C02178;
+	left: 50px;
+	font-size: 40px;
+	line-height: 122px;
+	font-family: 'Archivo Narrow', sans-serif;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease; 
+}
+
+	h1:hover {
+		letter-spacing: 0.2em;
+	}
+
+.icecream {
+	position: absolute;
+	left: 400px;
+	top: 300px;
+
+}
+
+.flowers {
+	position: absolute;
+	left: 400px;
+	top: 1000px;
+
+
+}
+
+.butterflies {
+	position: absolute;
+	left: 240px;
+	top: 1500px;
+	transition:0.10s cubic-bezier(0,1.22,.81,1.25);
+	cursor:pointer;
+	overflow: hidden;
+
+}
+
+.butterflies: hover {
+	width: 366px;
+	height: 415px;
+}
+
+.sunset {
+	position: absolute;
+	left: 650px;
+	top: 2000px;
+	transition:0.10s cubic-bezier(0,1.22,.81,1.25);
+	cursor:pointer;
+	overflow: hidden;
+
+}
+
+.sunset: hover {
+	width: 366px;
+	height: 415px;
+}
